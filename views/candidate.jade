@@ -1,0 +1,128 @@
+extend layout
+
+block body
+  body.candidate-bkg
+    
+    include ./includes/modals.jade
+    
+    .overlay
+    .container
+      include ./includes/header.jade
+      
+      .candidate.pure-g
+        .pure-u-1-5
+          .left-info(data-step='2', data-intro='Candidate personal info and application materials.', data-position='right')
+            .left-back
+              span.oi.oi-l(data-glyph='arrow-thick-left')
+              | Return to My Tasks
+            .photo
+            .name Jon Snow
+            .left-block
+              .block-title Contact Info
+              .block-link
+                span.oi(data-glyph='phone')
+                | (445) 998-2230
+              .block-link
+                span.oi(data-glyph='envelope-open')
+                | jonsnow@gmail.com
+            .left-block
+              .block-title Documents / Links
+              .block-link
+                span.oi(data-glyph='document')
+                | Resume
+              .block-link
+                span.oi(data-glyph='document')
+                | Recommendation
+              .block-link
+                span.oi(data-glyph='globe')
+                | Portfolio
+          
+        .pure-u-3-5
+          .content(data-step='3', data-intro='All discussion about the candidate goes here.  General coments about resume, personal recommendations from employees, interview feedback, etc.  The tab currently shows the evaluation from a phone interview with the interviewer Michael Bluth.', data-position='right')
+            .content-header
+              div General Discussion
+              div Review Feedback
+              div.tab-on Interview Feedback
+            .content-posts
+              .content-post
+                .author
+                  div
+                .content
+                  .content-main
+                    .content-top-bar
+                      .interviewer
+                        .name Michael Bluth
+                        .position UI Developer
+                      .interview-info
+                        .type 
+                          span.oi.oi-l(data-glyph='headphones')
+                          | Phone Interview
+                        .time
+                          span.oi.oi-l(data-glyph='clock')
+                          | 20 minutes ago
+                    .content-rating
+                      div.green
+                        span Overall
+                        b 7.5
+                      div.green
+                        span Personality
+                        b 9
+                      div.yellow
+                        span Teamwork
+                        b 5
+                      div.yellow
+                        span Motivation
+                        b 6
+                      div.green
+                        span Culture
+                        b 10
+                    .content-body
+                      | Overall- really nice candidate.  Has a strong engineering background and would recommend for a role on the Web Product team.
+                  .post-comments(data-step='4', data-intro='Other Addepar employees can comment on the evaluation', data-position='top')
+                    .comment
+                      .author
+                        div
+                      .content
+                        .content-top-bar 
+                          .commenter
+                            .name Mitchell Pritchett
+                            .position UI Designer
+                          .comment-time 10 min ago
+                        .content-body Good to hear!  He also has experience working with mobile, so he could help lead a potential transition in the future.
+                    .comment-path
+                    .comment
+                      .author
+                        div
+                      .content
+                        .content-top-bar 
+                          .commenter
+                            .name Arya Stark
+                            .position UI Developer
+                          .comment-time 5 min ago
+                        .content-body Totally agree with Mitchell.  I'm on the mobile team right now and we could use another engineer.  Jon seems like a nice guy.
+          
+        .pure-u-1-5
+          .right-info(data-step='5', data-intro='Right sidebar shows information about the recruitment status/process.', data-position='left')
+            .right-block(data-step='6', data-intro='Next action item for the candidate (could be "Review", "Make Offer Decision", "Start Interview", etc...).', data-position='left')
+              .block-title Current Status
+              .block-desc Phone Interview with Michael Bluth in 15 minutes
+              button.block-button.btn-bkg.btn-blue.open-modal(data='.evaluate-modal') Start Interview
+            .right-block(data-step='7', data-intro='Position/department the candidate applied for.', data-position='left')
+              .block-title Applied For
+              .block-body
+                span UI Developer Position
+                span Design Department
+            .right-block(data-step='8', data-intro='Candidate\'s process through the recruitment system.', data-position='left')
+              .block-title Recruitment Process
+              .flow
+                .event
+                  .date Jan. 15th
+                  .title Applied for UI Developer
+                .path
+                .event
+                  .date Jan 17th
+                  .title Reviewed and advanced by Michael Bluth
+                .path
+                .event.future-event
+                  .date Feb. 2nd
+                  .title Phone Interview with Michael Bluth

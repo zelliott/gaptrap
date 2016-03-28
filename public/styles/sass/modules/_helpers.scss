@@ -1,0 +1,50 @@
+.oi-blue {
+  color: palette(Blue, $shade: 600) !important;
+}
+
+.oi-gray {
+  color: #999 !important;
+}
+
+.oi-blue-circle {
+  background: palette(Blue, $shade: 600);
+  color: palette(Blue, $shade: 50);
+}
+
+.oi-orange-circle {
+  background: palette(Orange, $shade: 600);
+  color: palette(Orange, $shade: 50);
+}
+
+.oi-green-circle {
+  background: palette(Teal, $shade: 500);
+  color: palette(Teal, $shade: 50);
+}
+
+.oi-l {
+  margin-right: 10px;
+}
+
+.oi-r {
+  margin-left: 10px;
+}
+
+.green {
+  color: palette(Teal, $shade: 400) !important;
+}
+
+.yellow {
+  color: palette(Yellow, $shade: 900) !important;
+}
+
+.display-block {
+  display: block;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
