@@ -748,11 +748,19 @@ body .section-1 {
     background: #8AC8E3;
     margin: 0;
     height: 100vh; }
+  body .section-1 .left-content {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%; }
+  body .section-1 .right-content {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%; }
   body .section-1 .header {
     color: #fff;
     font-size: 50px;
     font-weight: 600;
-    padding-top: 100px;
+    padding-top: 20%;
     width: 400px; }
   body .section-1 .sub-header {
     color: #fff;
@@ -791,9 +799,8 @@ body .section-1 {
     background-clip: padding-box;
     height: 300px;
     width: 300px;
-    position: absolute;
-    right: 170px;
-    top: 100px; }
+    float: right;
+    margin-top: 20%; }
 body .section-2 {
   margin-top: 60px; }
   body .section-2 .header {
@@ -823,6 +830,7 @@ body .section-3 {
     height: 100vh; }
 body .inner-section {
   margin: 0 auto;
-  width: 960px; }
+  width: 960px;
+  padding: 0 20px; }
 
 /*# sourceMappingURL=screen.css.map */

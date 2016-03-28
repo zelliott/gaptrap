@@ -20,11 +20,23 @@ body {
       height: 100vh;
     }
 
+    .left-content {
+      display: inline-block;
+      vertical-align: top;
+      width: 50%;
+    }
+
+    .right-content {
+      display: inline-block;
+      vertical-align: top;
+      width: 50%;
+    }
+
     .header {
       color: #fff;
       font-size: 50px;
       font-weight: 600;
-      padding-top: 100px;
+      padding-top: 20%;
       width: 400px;
     }
 
@@ -66,9 +78,8 @@ body {
       @include border-radius(500px);
       height: 300px;
       width: 300px;
-      position: absolute;
-      right: 170px;
-      top: 100px;
+      float: right;
+      margin-top: 20%;
     }
   }
 
@@ -119,5 +130,6 @@ body {
   .inner-section {
     margin: 0 auto;
     width: 960px;
+    padding: 0 20px;
   }
 }
