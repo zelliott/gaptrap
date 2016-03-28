@@ -742,59 +742,74 @@ body .top-bar {
     color: #fff;
     font-size: 20px;
     line-height: 80px; }
-body .section-1 .section-background {
-  background: #8AC8E3;
-  margin: 0;
-  height: 100vh; }
-body .section-1 .header {
-  color: #fff;
-  font-size: 50px;
-  font-weight: 600;
-  padding-top: 100px;
-  width: 400px; }
-body .section-1 .sub-header {
-  color: #fff;
-  padding-top: 30px;
-  font-size: 25px;
-  font-weight: 400;
-  width: 400px; }
-body .section-1 .subscribe {
-  padding-top: 30px; }
-  body .section-1 .subscribe input[type=text] {
-    border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
+body .section-1 {
+  position: relative; }
+  body .section-1 .section-background {
+    background: #8AC8E3;
+    margin: 0;
+    height: 100vh; }
+  body .section-1 .header {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    padding-top: 100px;
+    width: 400px; }
+  body .section-1 .sub-header {
+    color: #fff;
+    padding-top: 30px;
+    font-size: 25px;
+    font-weight: 400;
+    width: 400px; }
+  body .section-1 .subscribe {
+    padding-top: 30px; }
+    body .section-1 .subscribe input[type=text] {
+      border-radius: 4px;
+      -moz-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      background-clip: padding-box;
+      border: 2px solid #fff;
+      padding: 10px 20px;
+      outline: none; }
+      body .section-1 .subscribe input[type=text]:focus {
+        border-color: #5EB1D5;
+        color: #5EB1D5; }
+    body .section-1 .subscribe input[type=submit] {
+      border-radius: 4px;
+      -moz-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      background-clip: padding-box;
+      background: #fff;
+      border: 2px solid #fff;
+      color: #5EB1D5;
+      padding: 10px 20px;
+      margin-left: 20px; }
+  body .section-1 .diagram {
+    background: #5EB1D5;
+    border-radius: 500px;
+    -moz-border-radius: 500px;
+    -webkit-border-radius: 500px;
     background-clip: padding-box;
-    border: 2px solid #fff;
-    padding: 10px 20px;
-    outline: none; }
-    body .section-1 .subscribe input[type=text]:focus {
-      border-color: #5EB1D5;
-      color: #5EB1D5; }
-  body .section-1 .subscribe input[type=submit] {
-    border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    background-clip: padding-box;
-    background: #fff;
-    border: 2px solid #fff;
-    color: #5EB1D5;
-    padding: 10px 20px;
-    margin-left: 20px; }
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    right: 170px;
+    top: 100px; }
 body .section-2 {
   margin-top: 60px; }
   body .section-2 .header {
     color: #444;
-    font-size: 40px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 500;
     text-align: center;
     padding-bottom: 30px; }
   body .section-2 .sub-header {
     color: #999;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
     text-align: center;
-    line-height: 40px; }
+    line-height: 35px;
+    width: 600px;
+    margin: 0 auto; }
   body .section-2 .diagram {
     height: 300px;
     width: 800px;
