@@ -1,5 +1,4 @@
 // Vendors
-@import "vendors/md-colors";
 @import "vendors/open-iconic";
 
 // Modules
@@ -12,16 +11,6 @@
 @import "base/layout";
 
 // Components
-@import "components/buttons";
-@import "components/inputs";
-@import "components/textareas";
-@import "components/modals";
-@import "components/tooltips";
-@import "components/range";
 
 // Views
-@import "views/header";
-@import "views/candidate";
-@import "views/process";
-@import "views/today";
-@import "views/candidates";
+@import "views/splash";
