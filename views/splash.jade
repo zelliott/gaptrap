@@ -17,8 +17,9 @@ block body
             div.sub-header
               | Stop your gadgets from falling under your bed.
             div.subscribe
-              input(type="text", placeholder="Your email address")
-              input(type="submit", value="Keep me updated")
+              form.subscribe-form
+                input(type="text", placeholder="Your email address", class="email")
+                input(type="submit", value="Keep me updated")
           div.right-content
             div.diagram
             

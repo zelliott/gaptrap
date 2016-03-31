@@ -716,6 +716,9 @@
 .oi[data-glyph=zoom-out]:before {
   content: '\e0de'; }
 
+.oi-l {
+  margin-right: 20px; }
+
 body,
 input,
 textarea,
@@ -790,7 +793,18 @@ body .section-1 {
       border: 2px solid #fff;
       color: #5EB1D5;
       padding: 10px 20px;
-      margin-left: 20px; }
+      margin-left: 20px;
+      outline: none; }
+      body .section-1 .subscribe input[type=submit]:focus {
+        outline: none; }
+    body .section-1 .subscribe .subscribe-success {
+      color: #fff;
+      font-size: 20px; }
+      body .section-1 .subscribe .subscribe-success span {
+        background: #fff;
+        border-radius: 50px;
+        color: #66DE90;
+        padding: 10px 12px 12px 14px; }
   body .section-1 .diagram {
     background: #5EB1D5;
     border-radius: 500px;
